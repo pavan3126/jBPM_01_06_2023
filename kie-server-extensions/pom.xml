@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.kie.server.ext</groupId>
+  <artifactId>kie-server-extensions</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <name>KIE Server extension modules</name>
+  <modules>
+    <module>kie-server-drools-mina</module>
+    <module>kie-server-mina-client</module>
+    <module>kie-server-drools-rest-ext</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging</artifactId>
+        <version>3.1.4.GA</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <repositories>
+    <repository>
+      <id>jboss-community-repository</id>
+      <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+    </repository>
+  </repositories>
+</project>
